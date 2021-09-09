@@ -151,9 +151,9 @@ If the user enters any of these four inputs, return true. For any other input, r
 Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
-const matchMonth = (input) => {
-  // Solution code here...
-};
+// const matchMonth = (input) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
@@ -165,9 +165,9 @@ For example, if given the string "Hello, and have a wonderful day!", the word "H
 The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "a ", "wonderful "].
 ------------------------------------------------------------------------------------------------ */
 
-const noPunctuation = (str) => {
-  // Solution code here...
-};
+// const noPunctuation = (str) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
@@ -181,9 +181,9 @@ The function should return a string containing the consonants in their original 
 For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
-let hangman = (str) => {
-  // Solution code here...
-};
+// let hangman = (str) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 10 - Stretch Goal
@@ -195,12 +195,12 @@ Do not use the vertical bar (pipe) character.
 Hint: All of these words end with the letters "ells".
 ------------------------------------------------------------------------------------------------ */
 
-const seashells =
-  "She sells seashells by the seashore. The shells she sells are surely seashells. So if she sells shells on the seashore, I'm sure she sells seashore shells.";
+// const seashells =
+//   "She sells seashells by the seashore. The shells she sells are surely seashells. So if she sells shells on the seashore, I'm sure she sells seashore shells.";
 
-const findShells = (str) => {
-  // Solution code here...
-};
+// const findShells = (str) => {
+//   // Solution code here...
+// };
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
@@ -342,156 +342,156 @@ describe("Testing challenge 6", () => {
   });
 });
 
-xdescribe("Testing challenge 7", () => {
-  test("It should match any of the acceptable inputs", () => {
-    expect(matchMonth("Oct")).toBeTruthy();
-    expect(matchMonth("oct")).toBeTruthy();
-    expect(matchMonth("October")).toBeTruthy();
-    expect(matchMonth("october")).toBeTruthy();
-  });
+// xdescribe("Testing challenge 7", () => {
+//   test("It should match any of the acceptable inputs", () => {
+//     expect(matchMonth("Oct")).toBeTruthy();
+//     expect(matchMonth("oct")).toBeTruthy();
+//     expect(matchMonth("October")).toBeTruthy();
+//     expect(matchMonth("october")).toBeTruthy();
+//   });
 
-  test("It should not match anything other than the acceptable inputs", () => {
-    expect(matchMonth("November")).toBeFalsy();
-    expect(matchMonth("nov")).toBeFalsy();
-    expect(matchMonth(123)).toBeFalsy();
-    expect(matchMonth("octob")).toBeFalsy();
-    expect(matchMonth("OCTOBER")).toBeFalsy();
-    expect(matchMonth("notOctober")).toBeFalsy();
-  });
-});
+//   test("It should not match anything other than the acceptable inputs", () => {
+//     expect(matchMonth("November")).toBeFalsy();
+//     expect(matchMonth("nov")).toBeFalsy();
+//     expect(matchMonth(123)).toBeFalsy();
+//     expect(matchMonth("octob")).toBeFalsy();
+//     expect(matchMonth("OCTOBER")).toBeFalsy();
+//     expect(matchMonth("notOctober")).toBeFalsy();
+//   });
+// });
 
-xdescribe("Testing challenge 8", () => {
-  const lorem =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia vel massa sed egestas. Nunc faucibus iaculis elit, a scelerisque enim condimentum sed. Aenean ac scelerisque sem, et pharetra diam.";
+// xdescribe("Testing challenge 8", () => {
+//   const lorem =
+//     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia vel massa sed egestas. Nunc faucibus iaculis elit, a scelerisque enim condimentum sed. Aenean ac scelerisque sem, et pharetra diam.";
 
-  test("It should only return words that are immediately followed by a space", () => {
-    expect(noPunctuation(lorem)).toStrictEqual([
-      "Lorem ",
-      "ipsum ",
-      "dolor ",
-      "sit ",
-      "consectetur ",
-      "adipiscing ",
-      "Cras ",
-      "lacinia ",
-      "vel ",
-      "massa ",
-      "sed ",
-      "Nunc ",
-      "faucibus ",
-      "iaculis ",
-      "a ",
-      "scelerisque ",
-      "enim ",
-      "condimentum ",
-      "Aenean ",
-      "ac ",
-      "scelerisque ",
-      "et ",
-      "pharetra ",
-    ]);
-    expect(noPunctuation(lorem).length).toStrictEqual(23);
-    expect(
-      noPunctuation(
-        "Given by our hand in the meadow that is called Runnymede, between Windsor and Staines, on the fifteenth day of June in the seventeenth year of our reign (i.e. 1215: the new regnal year began on 28 May)."
-      )
-    ).toEqual(
-      expect.arrayContaining([
-        "Given ",
-        "by ",
-        "our ",
-        "hand ",
-        "in ",
-        "the ",
-        "meadow ",
-        "that ",
-        "is ",
-        "called ",
-        "between ",
-        "Windsor ",
-        "and ",
-        "on ",
-        "the ",
-        "fifteenth ",
-        "day ",
-        "of ",
-        "June ",
-        "in ",
-        "the ",
-        "seventeenth ",
-        "year ",
-        "of ",
-        "our ",
-        "reign ",
-        "the ",
-        "new ",
-        "regnal ",
-        "year ",
-        "began ",
-        "on ",
-        "28 ",
-      ])
-    );
-  });
+//   test("It should only return words that are immediately followed by a space", () => {
+//     expect(noPunctuation(lorem)).toStrictEqual([
+//       "Lorem ",
+//       "ipsum ",
+//       "dolor ",
+//       "sit ",
+//       "consectetur ",
+//       "adipiscing ",
+//       "Cras ",
+//       "lacinia ",
+//       "vel ",
+//       "massa ",
+//       "sed ",
+//       "Nunc ",
+//       "faucibus ",
+//       "iaculis ",
+//       "a ",
+//       "scelerisque ",
+//       "enim ",
+//       "condimentum ",
+//       "Aenean ",
+//       "ac ",
+//       "scelerisque ",
+//       "et ",
+//       "pharetra ",
+//     ]);
+//     expect(noPunctuation(lorem).length).toStrictEqual(23);
+//     expect(
+//       noPunctuation(
+//         "Given by our hand in the meadow that is called Runnymede, between Windsor and Staines, on the fifteenth day of June in the seventeenth year of our reign (i.e. 1215: the new regnal year began on 28 May)."
+//       )
+//     ).toEqual(
+//       expect.arrayContaining([
+//         "Given ",
+//         "by ",
+//         "our ",
+//         "hand ",
+//         "in ",
+//         "the ",
+//         "meadow ",
+//         "that ",
+//         "is ",
+//         "called ",
+//         "between ",
+//         "Windsor ",
+//         "and ",
+//         "on ",
+//         "the ",
+//         "fifteenth ",
+//         "day ",
+//         "of ",
+//         "June ",
+//         "in ",
+//         "the ",
+//         "seventeenth ",
+//         "year ",
+//         "of ",
+//         "our ",
+//         "reign ",
+//         "the ",
+//         "new ",
+//         "regnal ",
+//         "year ",
+//         "began ",
+//         "on ",
+//         "28 ",
+//       ])
+//     );
+//   });
 
-  test("It should not contain words that are followed by any non-space character", () => {
-    expect(noPunctuation(lorem)).not.toContain([
-      "amet,",
-      "elit.",
-      "egestas.",
-      "elit,",
-      "sed.",
-      "sem,",
-      "diam.",
-      "nibh.",
-      "porttitor.",
-      "euismod,",
-      "ultrices.",
-      "massa,",
-      "vel,",
-      "purus.",
-      "purus,",
-      "odio.",
-      "aliquet,",
-      "non,",
-      "sem.",
-    ]);
-  });
-});
+//   test("It should not contain words that are followed by any non-space character", () => {
+//     expect(noPunctuation(lorem)).not.toContain([
+//       "amet,",
+//       "elit.",
+//       "egestas.",
+//       "elit,",
+//       "sed.",
+//       "sem,",
+//       "diam.",
+//       "nibh.",
+//       "porttitor.",
+//       "euismod,",
+//       "ultrices.",
+//       "massa,",
+//       "vel,",
+//       "purus.",
+//       "purus,",
+//       "odio.",
+//       "aliquet,",
+//       "non,",
+//       "sem.",
+//     ]);
+//   });
+// });
 
-xdescribe("Testing challenge 9", () => {
-  let startString =
-    "This is a regex challenge. We are trying to create a hangman phrase where all of the vowels are missing!";
+// xdescribe("Testing challenge 9", () => {
+//   let startString =
+//     "This is a regex challenge. We are trying to create a hangman phrase where all of the vowels are missing!";
 
-  test("It should remove the vowels from the hangman string and replace them with underscores", () => {
-    expect(hangman(startString)).toStrictEqual(
-      "Th_s _s _ r_g_x ch_ll_ng_. W_ _r_ try_ng t_ cr__t_ _ h_ngm_n phr_s_ wh_r_ _ll _f th_ v_w_ls _r_ m_ss_ng!"
-    );
-    expect(
-      hangman("I wAnt them all tO bE removed and replaced with Underscores.")
-    ).toStrictEqual(
-      "_ w_nt th_m _ll t_ b_ r_m_v_d _nd r_pl_c_d w_th _nd_rsc_r_s."
-    );
-  });
+//   test("It should remove the vowels from the hangman string and replace them with underscores", () => {
+//     expect(hangman(startString)).toStrictEqual(
+//       "Th_s _s _ r_g_x ch_ll_ng_. W_ _r_ try_ng t_ cr__t_ _ h_ngm_n phr_s_ wh_r_ _ll _f th_ v_w_ls _r_ m_ss_ng!"
+//     );
+//     expect(
+//       hangman("I wAnt them all tO bE removed and replaced with Underscores.")
+//     ).toStrictEqual(
+//       "_ w_nt th_m _ll t_ b_ r_m_v_d _nd r_pl_c_d w_th _nd_rsc_r_s."
+//     );
+//   });
 
-  test('It should not contain the letters "a", "e", "i", "o", or "u"', () => {
-    expect(hangman(startString)).not.toContain("a", "e", "i", "o", "u");
-  });
-});
+//   test('It should not contain the letters "a", "e", "i", "o", or "u"', () => {
+//     expect(hangman(startString)).not.toContain("a", "e", "i", "o", "u");
+//   });
+// });
 
-xdescribe("Testing challenge 10", () => {
-  test('It should return an array of instances of "sells", shells", and "seashells"', () => {
-    expect(findShells(seashells)).toStrictEqual([
-      "sells",
-      "seashells",
-      "shells",
-      "sells",
-      "seashells",
-      "sells",
-      "shells",
-      "sells",
-      "shells",
-    ]);
-    expect(findShells(seashells).length).toStrictEqual(9);
-  });
-});
+// xdescribe("Testing challenge 10", () => {
+//   test('It should return an array of instances of "sells", shells", and "seashells"', () => {
+//     expect(findShells(seashells)).toStrictEqual([
+//       "sells",
+//       "seashells",
+//       "shells",
+//       "sells",
+//       "seashells",
+//       "sells",
+//       "shells",
+//       "sells",
+//       "shells",
+//     ]);
+//     expect(findShells(seashells).length).toStrictEqual(9);
+//   });
+// });
